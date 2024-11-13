@@ -1,0 +1,58 @@
+section#more {
+  padding: 50px 0;
+  .half {
+    padding: 0 8px;
+    &:first-of-type .card {
+      background: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg)
+        center / cover no-repeat;
+    }
+
+    &:last-of-type .card {
+      background: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg)
+        center / cover no-repeat;
+    }
+  }
+  .card {
+    height: 500px;
+    position: relative;
+
+    &-overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(black, 0.3);
+      opacity: 0;
+
+      .card-btn {
+        all: unset;
+        background-color: #fff;
+        display: block;
+        width: 90%;
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 15px;
+        left: 5%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+      }
+    }
+
+    &:hover {
+      .card-overlay {
+        opacity: 1;
+      }
+    }
+
+    .sale {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #fff;
+      z-index: 12;
+      padding: 10px;
+      color: rgb(136, 117, 8);
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "reset";
+@import "utils";
+@import "featured";
+@import "more";
+
+section#fixed {
+  height: 300px;
+  background: url(https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7ac1c6ecdfd2_Section%20Image%202.jpg)
+    center / cover no-repeat fixed;
+}
+
+section {
+  text-align: center;
+
+  .title {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      border-bottom: 2px solid gold;
+      position: absolute;
+      top: 49%;
+      right: calc(100% + 5px);
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 50px;
+      border-bottom: 2px solid gold;
+      position: absolute;
+      top: 49%;
+      left: calc(100% + 5px);
+    }
+  }
+}
